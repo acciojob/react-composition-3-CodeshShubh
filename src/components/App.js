@@ -15,16 +15,6 @@ function App() {
 
       <br /><br />
 
-      <Tooltip text="Tooltip for an image">
-        <img
-          src="https://via.placeholder.com/100"
-          alt="Example"
-          style={{ cursor: "pointer" }}
-        />
-      </Tooltip>
-
-      <br /><br />
-
       <Tooltip text="Tooltip for a text">
         <span style={{ color: "blue", textDecoration: "underline", cursor: "pointer" }}>
           Hover over this text

@@ -8,9 +8,10 @@ const Tooltip = ({ text, children }) => {
     <div
       className="tooltip"
       onMouseEnter={() => setVisible(true)}
-      onMouseLeave={() => setVisible(false)}>
+      onMouseLeave={() => setVisible(false)}
+    >
       {children}
-      {visible && <span className="tooltiptext">{text}</span>}
+      {visible && <span className="tooltiptext tooltip-visible">{text}</span>}
     </div>
   );
 };
