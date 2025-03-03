@@ -3,23 +3,17 @@ import React from "react";
 import Tooltip from "./Tooltip";
 import './../styles/App.css';
 
+const text1  = 'for tool tip h2';
+
+const text2 = 'for tool tip p';
+
+
 
 function App() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>React Tooltip Example</h2>
-
-      <Tooltip text="This is a tooltip for a button">
-        <button>Hover over me</button>
-      </Tooltip>
-
-      <br /><br />
-
-      <Tooltip text="Tooltip for a text">
-        <span style={{ color: "blue", textDecoration: "underline", cursor: "pointer" }}>
-          Hover over this text
-        </span>
-      </Tooltip>
+    <div>
+        <Tooltip text = {text1} content = {<h2>this is first </h2>}/>
+        <Tooltip text = {text2} content= {<p>this is second</p>}/>
     </div>
   );
 }
